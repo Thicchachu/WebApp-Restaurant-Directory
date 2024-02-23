@@ -51,7 +51,7 @@ html, body {
 .login-container {
   max-width: 400px;
   margin: 0 auto;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   padding: 40px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
@@ -61,14 +61,14 @@ html, body {
   text-align: center;
   margin-bottom: 0px;
   font-size: 2rem;
-  color: #333;
+  color: #117964;
 }
 
 .login-form h3 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.7rem;
-  color: #333;
+  color: #57eed0;
 }
 
 .login-form-group {
@@ -91,6 +91,26 @@ button[type="login-submit"] {
 }
 
 button[type="login-submit"]:hover {
+  background-color: #57eed0;
+}
+
+button[type="homepage"] {
+  align-self: center;
+  display: block;
+  width: 30%;
+  margin: 1vh auto;
+  padding: 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #16a083;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="homepage"]:hover {
   background-color: #57eed0;
 }
 
@@ -117,14 +137,14 @@ button[type="login-submit"]:hover {
   text-align: center;
   margin-bottom: 0px;
   font-size: 2rem;
-  color: #333;
+  color: #117964;
 }
 
 .signup-form h3 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.7rem;
-  color: #333;
+  color: #57eed0;
 }
 
 .signup-form-group {
@@ -345,7 +365,8 @@ margin-top: 1.5em;
 /* ......//about us//...... */
 
 #about {
-  padding: 50px 0;
+  font-size: 5rem;
+  padding: 50px 10px;
   background: #f5f5f7;
 }
 
@@ -364,7 +385,7 @@ margin-top: 1.5em;
 }
 
 #about .small {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #013b79;
   font-weight: 600;
 }
@@ -540,40 +561,40 @@ margin-top: 1.5em;
 
 /* ........./ Testimonial /.......... */
 
-#testimonials {
+#recommendations {
   padding: 5rem 0;
   background: rgba(243, 243, 243);
 }
 
-.testimonial-title {
+.recommendation-title {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 400;
   color: #555;
 }
 
-.testimonial-container {
+.recommendation-container {
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
   padding: 1rem;
 }
 
-.testimonial-box .checked {
+.recommendation-box .checked {
   color: #ff9529;
 }
 
-.testimonial-box .testimonial-text {
+.recommendation-box .recommendation-text {
   margin: 1rem 0;
   color: #444;
 }
 
-.testimonial-box {
+.recommendation-box {
   text-align: center;
   padding: 1rem;
 }
 
-.customer-photo img {
+.recommendation-photo img {
   display: block;
   width: 150px;
   height: 150px;
@@ -593,6 +614,7 @@ margin-top: 1.5em;
 .contact-container {
   display: flex;
   background: #fff;
+  height: 50vh; /* Set the height to 75% of the viewport height */
 }
 
 .contact-img {
@@ -600,11 +622,9 @@ margin-top: 1.5em;
 }
 
 .contact-img img {
-  display: block;
-  height: 0 auto;
+  height: 100%; /* Set the height of the image to fill its container */
   width: 100%;
-  object-position: center;
-  object-fit: cover;
+  object-fit: cover; /* Ensure the image covers the entire container */
 }
 
 .form-container {
@@ -613,36 +633,27 @@ margin-top: 1.5em;
   margin: auto;
 }
 
-.form-container input {
-  display: block;
+.form-container input,
+.form-container textarea {
   width: 100%;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  padding: 1rem 0;
-  box-shadow: none;
-  outline: none;
+  padding: 1rem;
   margin-bottom: 1rem;
+  border: none;
+  border-bottom: 2px solid #57eed0;
+  outline: none;
   color: #444;
   font-weight: 500;
 }
 
 .form-container textarea {
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #ddd;
-  color: #444;
-  outline: none;
-  padding: 1rem 0;
   resize: none;
 }
 
 .form-container h2 {
-  font-size: 2.7rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #444;
   margin-bottom: 1rem;
-  margin-top: -1.2rem;
 }
 
 .form-container a {
@@ -652,7 +663,7 @@ margin-top: 1.5em;
 #footer h2 {
   text-align: center;
   font-size: 1.8rem;
-  padding: 2.6rem;
+  padding: 0.5rem;
   font-weight: 500;
   color: #fff;
   background: rgb(65, 65, 65);
