@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!--Navigation Bar-->
     <nav class="navbar">
         <div class="navbar-container container">
             <input type="checkbox" name="" id="">
@@ -29,11 +30,11 @@
                 <li><a href="/restaurants/restaurantHome.html">Restaurants</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
             </ul>
             <h1 class="logo">FH</h1>
         </div>
     </nav>
+    <!--Showcase: Motto & Background Image-->
     <section class="showcase-area" id="showcase">
         <div class="showcase-container">
             <h1 class="main-title" id="home">Good Food, Great Mood</h1>
@@ -41,7 +42,7 @@
             <a href="/restaurants/restaurantHome.html" class="btn btn-primary">Restaurants</a>
         </div>
     </section>
-
+    <!--About Us-->
     <section id="about">
         <div class="about-wrapper container">
             <div class="about-text">
@@ -56,6 +57,7 @@
             </div>
         </div>
     </section>
+    <!--Cuisines-->
     <section id="cuisines">
         <h2>Types of Cuisines</h2>
         <div class="cuisine-container container">
@@ -101,7 +103,7 @@
             </div>
         </div>
     </section>
-    
+    <!--Recommendatiuons-->
     <section id="recommendations">
         <h2 class="recommendation-title">Recommended Restaurants</h2>
         <div class="recommendation-container container">
@@ -165,6 +167,8 @@ Craving global flavors in a tranquil garden setting? Madchef beckons with an ext
             </div>
         </div>
     </section>
+
+    <!--Contact US-->
     <section id="contact">
         <div class="contact-container container">
             <div class="contact-img">
@@ -180,15 +184,40 @@ Craving global flavors in a tranquil garden setting? Madchef beckons with an ext
             </div>
         </div>
     </section>
+
+    <!--Footer-->
     <footer id="footer">
         <h2>FoodHaven &copy; All Rights Reserved</h2>
     </footer>
-    <!-- .................../ JS Code for smooth scrolling /...................... -->
 
+
+    <!-- JavaScript Code -->
+    <script>
+        // Check if the user is logged in (for demonstration purposes)
+        const isLoggedIn = true; // Replace with your actual logic to check if the user is logged in
+
+        // Get references to the login button and profile picture elements
+        const loginBtn = document.getElementById("login-btn");
+        const profilePic = document.getElementById("profile-pic");
+
+        // Function to toggle visibility based on login status
+        function toggleLoginStatus() {
+            if (isLoggedIn) {
+                loginBtn.style.display = "none"; // Hide the login button
+                profilePic.style.display = "inline"; // Show the profile picture
+            } else {
+                loginBtn.style.display = "inline"; // Show the login button
+                profilePic.style.display = "none"; // Hide the profile picture
+            }
+        }
+
+        // Call the function to toggle login status when the page loads
+        window.onload = toggleLoginStatus;
+    </script>
+
+    <!-- JS Code for smooth scrolling and other functionalities -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
-
-</html>
 
 </body>
 

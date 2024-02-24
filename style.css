@@ -78,7 +78,7 @@ html, body {
 button[type="login-submit"] {
   align-self: center;
   display: block;
-  width: 30%;
+  width: 25%;
   margin: 0 auto;
   padding: 10px;
   font-size: 1.2rem;
@@ -97,7 +97,7 @@ button[type="login-submit"]:hover {
 button[type="homepage"] {
   align-self: center;
   display: block;
-  width: 30%;
+  width: 28%;
   margin: 1vh auto;
   padding: 10px;
   font-size: 0.7rem;
@@ -181,6 +181,25 @@ button[type="signup-submit"] {
 }
 
 button[type="signup-submit"]:hover {
+  background-color: #57eed0;
+}
+
+button[type="signup-redirect"] {
+  align-self: center;
+  display: block;
+  width: 31%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #16a083;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="signup-redirect"]:hover {
   background-color: #57eed0;
 }
 /* ............/navbar/............ */
@@ -292,27 +311,6 @@ button[type="signup-submit"]:hover {
   height: 100%;
   font-size: 1.6rem;
 }
-
-.showcase-area-restaurant {
-    height: 50vh;
-    background: linear-gradient(
-        rgba(240, 240, 240, 0.144),
-        rgba(255, 255, 255, 0.336)
-      ),
-      url("images/showcaseRestaurant.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .showcase-restaurant-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 1.6rem;
-  }
 
 .login-showcase-area {
   height: 100vh;
@@ -426,7 +424,7 @@ margin-top: 1.5em;
   object-position: right;
 }
 
-/* ..........////Food category///........... */
+/* ..........////Cuisines category///........... */
 
 #cuisines {
   padding: 5rem 0 5rem 0;
@@ -507,22 +505,22 @@ margin-top: 1.5em;
   top: 40%;
 }
 
-/* .........../Food Menu/............ */
+/* .........../Restaurant List/............ */
 
-.food-menu-heading {
+.restaurant-list-heading {
   text-align: center;
   font-size: 3.4rem;
   font-weight: 400;
   color: #666;
 }
 
-.food-menu-container {
+.restaurant-list-container {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 0px 30px 0px;
 }
 
-.food-menu-container img {
+.restaurant-list-container img {
   display: block;
   width: 250px;
   height: 250px;
@@ -531,14 +529,14 @@ margin-top: 1.5em;
   object-position: center;
 }
 
-.food-menu-item {
+.restaurant-list-item {
   display: flex;
   flex: 1 1 600px;
   justify-content: space-evenly;
   margin-bottom: 3rem;
 }
 
-.food-description {
+.restaurant-description {
   margin: auto 1.5rem;
 }
 
@@ -548,18 +546,18 @@ margin-top: 1.5em;
   color: #444;
 }
 
-.food-description p {
+.restaurant-description p {
   font-size: 1.4rem;
   color: #555;
   font-weight: 500;
 }
 
-.food-description .food-price {
+.restaurant-description .restaurant-rating {
   color: #117964;
   font-weight: 700;
 }
 
-/* ........./ Testimonial /.......... */
+/* ........./ Recommendation /.......... */
 
 #recommendations {
   padding: 5rem 0;
@@ -669,6 +667,153 @@ margin-top: 1.5em;
   background: rgb(65, 65, 65);
 }
 
+/*..............Menu ..............*/
+
+.menu-container {
+    padding: 50px 0;
+}
+
+.menu-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #117964;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    flex: 0 1 calc(33.33% - 20px);
+    background-color: #f5f5f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+    font-size: 1.8rem;
+    color: #117964;
+    margin-bottom: 10px;
+}
+
+.item-description {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 1.6rem;
+    color: #117964;
+    font-weight: bold;
+}
+/*.........Food Menu.........*/
+
+.food-menu-container {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #117964;
+  margin-bottom: 30px;
+}
+
+.food-menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.food-menu-item {
+  flex: 0 1 calc(33.33% - 20px);
+  background-color: #f5f5f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem; /* Added margin bottom for spacing */
+}
+
+.food-item-name {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 0.5rem; /* Added margin bottom for spacing */
+}
+
+.food-item-description {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 1rem; /* Added margin bottom for spacing */
+}
+
+.food-item-price {
+  font-size: 1.4rem;
+  color: #117964;
+  font-weight: 700;
+}
+
+/*........ Location ........*/
+
+.location-container {
+  padding: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.location-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #117964;
+  margin-bottom: 30px;
+}
+
+.location-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.location-item {
+  flex: 0 1 calc(33.33% - 20px);
+  background-color: #f5f5f7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.location-name {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 0.5rem; /* Added margin bottom for spacing */
+}
+
+.location-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0rem; /* Added margin bottom for spacing */
+}
+
+
 /* ......../ media query /.......... */
 
 @media (max-width: 768px) {
@@ -776,18 +921,18 @@ margin-top: 1.5em;
     transform: rotate(-35deg);
   }
 
-  /* ......./ food /......... */
+  /* ......./ restaurant /......... */
 
-  .food-container {
+  .restaurant-container {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .food-type:not(:last-child) {
+  .restaurant-type:not(:last-child) {
     margin-bottom: 3rem;
   }
 
-  .food-type {
+  .restaurant-type {
     box-shadow: 5px 5px 10px 0 #aaa;
   }
 
@@ -810,11 +955,11 @@ margin-top: 1.5em;
     text-align: center;
   }
 
-  .food-menu-container img {
+  .restaurant-list-container img {
     margin: auto;
   }
 
-  .food-menu-item {
+  .restaurant-list-item {
     flex-direction: column;
     text-align: center;
   }
@@ -862,3 +1007,4 @@ margin-top: 1.5em;
     height: 50vmax;
   }
 }
+
