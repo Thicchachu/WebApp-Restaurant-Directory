@@ -45,7 +45,7 @@ html, body {
 
 .btn-primary:hover {
   background: #117964;
-  transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 /*.........../Login&SignUp/..............*/
 .login-container {
@@ -68,7 +68,7 @@ html, body {
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.7rem;
-  color: #57eed0;
+  color: #1518cdcc;
 }
 
 .login-form-group {
@@ -92,7 +92,7 @@ button[type="login-submit"] {
 }
 
 button[type="login-submit"]:hover {
-  background-color: #57eed0;
+  background-color: #57eed0b6;
 }
 
 .login-form-group select {
@@ -128,16 +128,16 @@ button[type="food-item-description-edit"] {
 }
 
 button[type="food-item-description-edit"]:hover {
-  background-color: #57eed0;
+  background-color: #57eed0b6;
 }
 
 button[type="homepage"] {
   align-self: center;
   display: block;
-  width: 28%;
+  width: 32%;
   margin: 1vh auto;
-  padding: 10px;
-  font-size: 0.7rem;
+  padding: 6px;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #16a083;
   background-color: rgba(255, 255, 255, 0.8);
@@ -148,7 +148,7 @@ button[type="homepage"] {
 }
 
 button[type="homepage"]:hover {
-  background-color: #57eed0;
+  background-color: #57eed0b6;
 }
 
 .signup-container {
@@ -181,7 +181,7 @@ button[type="homepage"]:hover {
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.7rem;
-  color: #57eed0;
+  color: #1518cdcc;
 }
 
 .signup-form-group {
@@ -218,16 +218,16 @@ button[type="signup-submit"] {
 }
 
 button[type="signup-submit"]:hover {
-  background-color: #57eed0;
+  background-color: #57eed0b6;
 }
 
 button[type="signup-redirect"] {
   align-self: center;
   display: block;
-  width: 31%;
+  width: 28%;
   margin: 10px auto;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   background-color: #16a083;
   border: none;
@@ -237,7 +237,7 @@ button[type="signup-redirect"] {
 }
 
 button[type="signup-redirect"]:hover {
-  background-color: #57eed0;
+  background-color: #57eed0b6;
 }
 /* ............/navbar/............ */
 .menu-items li {
@@ -372,6 +372,14 @@ button[type="signup-redirect"]:hover {
   justify-content: center;
   height: 100%;
   font-size: 1.6rem;
+}
+
+.login-signup-paragragh{
+  font-size: 0.9rem;
+  font-weight: 200;
+  text-align: center;
+  padding: 0px;
+  margin: 5px;
 }
 
 .signup-showcase-area {
@@ -674,7 +682,7 @@ margin-top: 1.5em;
   padding: 1rem;
   margin-bottom: 1rem;
   border: none;
-  border-bottom: 2px solid #57eed0;
+  border-bottom: 2px solid #57eed0b6;
   outline: none;
   color: #444;
   font-weight: 500;

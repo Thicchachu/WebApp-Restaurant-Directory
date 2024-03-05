@@ -9,9 +9,9 @@
     <body>
         <section class="login-showcase-area">
         <div class="login-container">
-            <form class="login-form">
+            <form class="login-form" action="login.php" method="post">
                 <h2>FoodHaven</h2>
-                <h3><span><i>Login</i></span></h3>
+                <h3><span>Login</span></h3>
                 <div class="login-form-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
@@ -29,6 +29,7 @@
             </div>
             <button type="login-submit" class="btn btn-primary">Login</button>
             </form>
+            <p class="login-signup-paragragh">Don't have an account? Sign Up!</p>
             <button type="signup-redirect" onclick="window.location.href='/signup.html'" class="btn btn-primary">Sign Up</button>
             <button type="homepage" onclick="window.location.href='/index.html'" class="btn btn-secondary">Home Page</button>
         </div>
